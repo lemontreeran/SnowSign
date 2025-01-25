@@ -1,12 +1,24 @@
 import streamlit as st
 from openai import OpenAI
 
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+import random
+import os
+from streamlit_extras.switch_page_button import switch_page
+from st_pages import Page, show_pages
+from streamlit_extras.colored_header import colored_header
+from datetime import datetime, timedelta
+import requests
+
+# Setup page.
+st.set_page_config(layout="wide")
+
+show_pages(
+    [
+        Page("Home.py", "Home", "🔥"),
+        Page("pages/Chatbot.py", "AI Agent", "🤖"),
+        Page("pages/Tableau.py", "Tableau", "🖥️"),
+        Page("pages/Docusign.py", "Docusign", "📑"),
+    ]
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
