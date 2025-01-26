@@ -1,3 +1,4 @@
 streamlit
 openai
 streamlit_extras
+st_pages>=0.4.3
