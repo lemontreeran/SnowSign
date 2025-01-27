@@ -1,0 +1,19 @@
+[[pages]]
+path = "streamlit_app.py"
+name = "Home"
+icon = "🔥"
+
+[[pages]]
+path = "pages/Chatbot.py"
+name = "Chatbot"
+icon = "🤖"
+
+[[pages]]
+path = "pages/Tableau.py"
+name = "Tableau"
+icon = "🖥️"
+
+[[pages]]
+path = "pages/Docusign.py"
+name = "Docusign"
+icon = "📑"
