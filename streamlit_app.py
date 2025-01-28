@@ -18,7 +18,7 @@ sections = st.sidebar.toggle("Sections", value=True, key="use_sections")
 pg = st.navigation([
     st.Page("pages/Home.py", title="Home", icon="🔥"),
     st.Page("pages/Chatbot.py", title="Chatbot", icon="🤖"),
-    st.Page("pages/Tableau.py", title="Tableau", icon="🖥️"),
+    # st.Page("pages/Tableau.py", title="Tableau", icon="🖥️"),
     st.Page("pages/Docusign.py", title="Docusign", icon="📑"),
 ])
 
